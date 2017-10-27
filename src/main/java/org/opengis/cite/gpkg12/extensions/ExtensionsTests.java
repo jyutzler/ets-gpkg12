@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
  * </p>
  * <ul>
  * <li><a href="http://www.geopackage.org/spec/#_extension_mechanism" target= "_blank">
- * GeoPackage Encoding Standard - 2.3 Extension Mechanism</a> (OGC 12-128r13)</li>
+ * GeoPackage Encoding Standard - 2.3 Extension Mechanism</a> (OGC 12-128r14)</li>
  * </ul>
  *
  * @author Jeff Yutzler
@@ -54,7 +54,7 @@ public class ExtensionsTests extends CommonFixture
 	 * @throws SQLException
 	 *             If an SQL query causes an error
 	 */
-	@Test(description = "See OGC 12-128r13: Requirement 58")
+	@Test(description = "See OGC 12-128r14: Requirement 58")
 	public void extensionsTableDefinition() throws SQLException
 	{
 		try (		// 1
@@ -109,7 +109,7 @@ public class ExtensionsTests extends CommonFixture
 	 * @throws SQLException
 	 *             If an SQL query causes an error
 	 */
-	@Test(description = "See OGC 12-128r13: Requirement 60")
+	@Test(description = "See OGC 12-128r14: Requirement 60")
 	public void extensionsTableValues() throws SQLException
 	{
 		try (		// 1
@@ -156,7 +156,7 @@ public class ExtensionsTests extends CommonFixture
 	 * @throws SQLException
 	 *             If an SQL query causes an error
 	 */
-	@Test(description = "See OGC 12-128r13: Requirement 61")
+	@Test(description = "See OGC 12-128r14: Requirement 61")
 	public void extensionsColumnValues() throws SQLException
 	{
 		try (		
@@ -195,7 +195,7 @@ public class ExtensionsTests extends CommonFixture
 	 * @throws SQLException
 	 *             If an SQL query causes an error
 	 */
-	@Test(description = "See OGC 12-128r13: Requirement 64")
+	@Test(description = "See OGC 12-128r14: Requirement 64")
 	public void extensionsColumnScope() throws SQLException
 	{
 		try (

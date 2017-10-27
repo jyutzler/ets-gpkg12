@@ -53,7 +53,12 @@ public class VerifyTestNGController {
     @Test
     public void cleanTestRun() throws Exception {
     	
-//        runTests(ClassLoader.getSystemResource("gpkg/ek7demo-osm_tiles-20170526.gpkg"), 0);
+        runTests(ClassLoader.getSystemResource("gpkg/2664.gpkg"), 0);
+        runTests(ClassLoader.getSystemResource("gpkg/W073N18.gpkg"), 0);
+//      runTests(ClassLoader.getSystemResource("gpkg/ek7demo-osm_tiles-20170526.gpkg"), 0);
+        runTests(ClassLoader.getSystemResource("gpkg/example-thematic.gpkg"), 0);
+//        runTests(ClassLoader.getSystemResource("gpkg/Sample_Gpkg_WashingtonDC_Vector.gpkg"), 0);
+//        runTests(ClassLoader.getSystemResource("gpkg/Sample_Gpkg_WashingtonDC.gpkg"), 0);
         runTests(ClassLoader.getSystemResource("gpkg/gpkg-test-5208.gpkg"), 0);
         runTests(ClassLoader.getSystemResource("gpkg/gdal_sample_v1.2_spi_nonlinear_webp_elevation.gpkg"), 0);
         runTests(ClassLoader.getSystemResource("gpkg/gdal_sample_v1.2_spatial_index_extension.gpkg"), 0);
@@ -74,6 +79,7 @@ public class VerifyTestNGController {
         runTests(ClassLoader.getSystemResource("gpkg/geonames_belgium.gpkg"), 3); // lower case data types, R77
         runTests(ClassLoader.getSystemResource("gpkg/haiti-vectors-split.gpkg"), 3); // lower case data types, R77
         runTests(ClassLoader.getSystemResource("gpkg/bentiu_southsudan-osm-20170213.gpkg"), 2); //R5, R29
+//        runTests(ClassLoader.getSystemResource("gpkg/Benicia_GeoPackage2.gpkg"), 1);
 //        runTests(ClassLoader.getSystemResource("gpkg/ek7demo.gpkg"), 7);
     }
     private void runTests(URL testSubject, int fails) throws Exception {
