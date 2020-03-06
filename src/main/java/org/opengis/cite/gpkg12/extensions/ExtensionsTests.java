@@ -175,7 +175,7 @@ public class ExtensionsTests extends CommonFixture
 				try (final Statement statement1 = this.databaseConnection.createStatement()) {
 					// 3bi
 					// FORTIFY CWE Corrected
-					statement1.executeQuery(String.format("SELECT COUNT(%s) from %s;", columnName, tableName));
+					statement1.executeQuery(String.format("SELECT COUNT(%s) from '%s';", columnName, tableName));
 				} catch (SQLException exc) {
 					Assert.fail(ErrorMessage.format(ErrorMessageKeys.INVALID_DATA_COLUMN, "gpkg_extensions", columnName, tableName));
 				}
